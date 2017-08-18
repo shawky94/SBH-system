@@ -1,0 +1,39 @@
+<template name="header">
+										
+	<div class="header_area">
+		<div class="centre header">
+			<div class="logo fix floatleft">
+				<img src="/images/logo.png" alt="logo"/>
+			</div>
+			<div class="menu_area floatright">
+				<div >
+					<p>
+						<input id="searchBox" type="text" class="search" placeholder="Ask for apps" value={{searchTerm}} />
+						<a id="searchLink" class="searchLink" href="/searchResult" ><img margin-top="30px" src="/images/search.png" /> </a>
+						<script>
+							$('#searchLink').click(function () { 
+								document.getElementById('searchBox').value = "";
+							});
+
+						</script>
+						{{> loginButtons}}
+					</p>
+				</div>
+				<div class="top_menu">
+					<ul id="nav">
+						<li><a href="/">Home</a></li>
+						<li><a href="/profile">profile</a></li>
+						<li><a href="">Cataloge <i class="fa fa-caret-down"></i></a>
+							<ul>
+								<li><a id="test"  class="top-rated" href="/catalog">Top rated movies</a></li>
+								<li><a class="latest" href="/catalog"> Latest movies</a></li>
+								
+							</ul>
+						</li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div> <!-- End header area-->
+</template>

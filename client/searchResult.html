@@ -1,0 +1,25 @@
+<template name="searchResult">
+	<div class="fix main_content_area">
+		<div class="fix centre main_content">
+			<div class="fix blog_home_content floatleft">
+				<h2><i class="fa fa-angle-double-down"></i>result sets </h2>
+				{{#each movies}}
+				{{> currentMovie}}
+				{{/each}}
+			</div> 
+		</div>
+	</div>
+	<script src="http://code.jquery.com/jquery.js"></script>	
+</template>
+
+
+<template name="currentMovie" class="mohsan">
+	<div class="fix single_home_content">
+		<div class="android_news_content fix">
+			<div class="fix single_android_news">
+				<h1><a  class="mohsan">{{name}}</a></h1> 
+					
+			</div>
+		</div>
+	</div>			
+</template>	
